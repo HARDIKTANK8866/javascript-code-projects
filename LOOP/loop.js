@@ -68,7 +68,6 @@
 // }
 // }
 //WRIGHT OR WRONG NUMBER GAME
-console.log('hellow ordl!');
 let ganmeNum = 25;
 let userNum =prompt("Guess the numer");
 while(userNum != ganmeNum)
