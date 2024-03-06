@@ -68,9 +68,9 @@
 // }
 // }
 //WRIGHT OR WRONG NUMBER GAME
-let ganmeNum = 25;
+let gameNum = 25;
 let userNum =prompt("Guess the numer");
-while(userNum != ganmeNum)
+while(userNum != gameNum)
 {
     userNum =prompt("You entered wrong number. Guess again :");
 
