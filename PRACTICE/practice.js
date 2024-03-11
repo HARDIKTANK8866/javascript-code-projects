@@ -207,13 +207,13 @@ JsUser.age=("23")
 //console.log(JsUser)
 
 JsUser.greeting = function(){
-    console.log("hello JS");
+    // console.log("hello JS");
 };
 JsUser.greetingtwo= function(){
-    console.log(`hello my name is ,${this.name}how are you`);
+    // console.log(`hello my name is ,${this.name}how are you`);
 };
-console.log(JsUser.greeting());
-console.log(JsUser.greetingtwo());
+// console.log(JsUser.greeting());
+// console.log(JsUser.greetingtwo());
 // ============== Advance Object ==============
 
  //let tinderUser = new Object(); //key difference is this is singleton object
@@ -222,7 +222,7 @@ console.log(JsUser.greetingtwo());
  tinderUser.id = "TU123";
  tinderUser.name = "Naman";
  tinderUser.isLoggedIn = true;
- console.log(tinderUser);
+//  console.log(tinderUser);
 
  let facebookUser = {
      email: "someone@google.com",
@@ -233,10 +233,10 @@ console.log(JsUser.greetingtwo());
          }
      }
  }
-console.log(facebookUser); //complete object
-console.log(facebookUser.fullName); //nested-object
-console.log(facebookUser.fullName.userFullName.firstName); //nested-object
-console.log(facebookUser.fullName.userFullName.lastName); //nested-object
+// console.log(facebookUser); //complete object
+// console.log(facebookUser.fullName); //nested-object
+// console.log(facebookUser.fullName.userFullName.firstName); //nested-object
+// console.log(facebookUser.fullName.userFullName.lastName); //nested-object
 
 const obj1 = {1: "a", 2: "b", 3: "c"}
 const obj2 = {3: "a", 4: "b", 5: "c"}
@@ -247,9 +247,137 @@ const obj4 = {1: "a", 2: "b", 3: "c"}
 //const obj3 = Object.assign({}, obj1, obj2,obj4)
 
 const obj3 = {...obj1, ...obj2}
-console.log(obj3);
+// console.log(obj3);
 
-console.log(Object.values(tinderUser));
-console.log(Object.keys(tinderUser));
-console.log(Object.entries(tinderUser));
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+// console.log(Object.values(tinderUser));
+// console.log(Object.keys(tinderUser));
+// console.log(Object.entries(tinderUser));
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+
+const cource ={
+
+    courceName : "js ",
+    price : 999,
+    inst : "hardik"
+}
+const {inst} = cource
+console.log(inst);
+
+// *******************************************FUNCTION**********************************
+
+function sayMyName(){
+    console.log("H");
+    console.log("A");
+    console.log("R");
+    console.log("D");
+    console.log("I");
+    console.log("K");
+}
+
+// sayMyName()
+
+// function addTwoNumbers(number1, number2){
+
+//     console.log(number1 + number2);
+// }
+
+function addTwoNumbers(number1, number2){
+
+    // let result = number1 + number2
+    // return result
+    return number1 + number2
+}
+
+const result = addTwoNumbers(3, 5)
+
+// console.log("Result: ", result);
+
+
+function loginUserMessage(username = "tank"){
+    if(!username){
+        console.log("PLease enter a username");
+        return
+    }
+    return `${username} just logged in`
+}
+
+// console.log(loginUserMessage("HARDIK"))
+// console.log(loginUserMessage("HARDIK"))
+
+
+function calculateCartPrice(val1, val2, ...num1){
+    return num1
+}
+
+// console.log(calculateCartPrice(200, 400, 500, 2000))
+
+const user = {
+    username: "HARDIK",
+    prices: 199
+}
+
+function handleObject(anyobject){
+    //console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
+}
+
+// handleObject(user)
+handleObject({
+    username: "sam",
+    price: 399
+})
+
+const myNewArray = [200, 400, 100, 600]
+
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+
+// console.log(returnSecondValue(myNewArray));
+//console.log(returnSecondValue([200, 400, 500, 1000]));
+
+//                                                                             FUNCTION
+function one(){
+}
+
+// one()
+
+if (true) {
+    const username = "HARDIK"
+    if (username === "HARDIK") {
+        const website = " youtube"
+        // console.log(username + website);
+    }
+    // console.log(website);
+}
+
+// console.log(username);
+
+
+//                                                                              interesting 
+
+
+console.log(addone(5))
+
+function addone(num){
+    return num + 1
+}
+
+
+
+
+const addTwo = function(num){
+    return num + 2
+}
+addTwo(5)
+
+
+//                                                                  ARROW FUNCTION WITH Ex.
+
+const User = {
+    username : "Harditank",
+    price : 999,
+    welcomeMsg:function(){
+        console.log(`${this.username},welcome to website`);
+    }        
+}
+user.welcomeMsg();
