@@ -261,17 +261,18 @@ const cource ={
     inst : "hardik"
 }
 const {inst} = cource
-console.log(inst);
+//console.log(inst);
 
 // *******************************************FUNCTION**********************************
 
+
 function sayMyName(){
-    console.log("H");
-    console.log("A");
-    console.log("R");
-    console.log("D");
-    console.log("I");
-    console.log("K");
+    // console.log("H");
+    // console.log("A");
+    // console.log("R");
+    // console.log("D");
+    // console.log("I");
+    // console.log("K");
 }
 
 // sayMyName()
@@ -295,7 +296,7 @@ const result = addTwoNumbers(3, 5)
 
 function loginUserMessage(username = "tank"){
     if(!username){
-        console.log("PLease enter a username");
+        //console.log("PLease enter a username");
         return
     }
     return `${username} just logged in`
@@ -356,28 +357,262 @@ if (true) {
 //                                                                              interesting 
 
 
-console.log(addone(5))
+//console.log(addone(5))
 
 function addone(num){
-    return num + 1
+    // return num + 1
 }
 
 
 
 
-const addTwo = function(num){
-    return num + 2
-}
-addTwo(5)
+// //const addTwo = function(num){
+//     return num + 2
+// }
+// //addTwo(5)
 
 
-//                                                                  ARROW FUNCTION WITH Ex.
+//                                        FUNCTION DECLARATION & ARROW FUNCTION WITH Ex.
 
 const User = {
     username : "Harditank",
     price : 999,
     welcomeMsg:function(){
-        console.log(`${this.username},welcome to website`);
+  //      console.log(`${this.username},welcome to website`);
+        //console.log(this);
     }        
 }
-user.welcomeMsg();
+User.welcomeMsg()
+User.username = "Herry"                      //user name changed but print same value
+User.welcomeMsg()
+//console.log(this);
+
+// function chai(){
+//     console.log(this);
+// }
+// chai()
+
+// const chai =()=> {
+//     let userName = "Hardik"
+//     console.log(this);
+// }
+// chai()
+
+//  const addTwo = (num1, num2)=>{
+//     return num1 + num2
+// }
+// const addTwo = (num1, num2)=>  num1 + num2                      //Implicit return with arrow function
+// const addTwo = (num1, num2)=>  (num1 + num2)
+const addTwo = (num1, num2)=>  ({username : "HARDIK"})   //implicit object user karva ({object})   ()compulsory 
+//console.log(addTwo(3,1))
+
+                                                    //IIFE USED
+(function chai(){
+    //NAME IIFE
+    ///console.log(`DB CONNECTED`);
+})();   
+                                            //TWO IIFE USED MATE ; COMPULSORY LAGAVU 
+((name)=>{
+    //console.log(`DB CONNECTED TWO ${name}`);
+})('Hardik')
+                                            // IF ELSE 
+                                            // if
+const isUserloggedIn = true
+const temperature = 41
+
+// if ( temperature === 40 ){
+//     console.log("less than 50");
+// } else {
+//     console.log("temperature is greater than 50");
+// }
+
+// console.log("Execute");
+// <, >, <=, >=, ==, !=, ===, !==
+
+// const score = 200
+
+// if (score > 100) {
+//     let power = "fly"
+//     console.log(`User power: ${power}`);
+// }
+
+// console.log(`User power: ${power}`);
+
+
+// const balance = 1000
+
+// if (balance > 500) console.log("test"),console.log("test2");
+
+// if (balance < 500) {
+//     console.log("less than 500");
+// } else if (balance < 750) {
+//     console.log("less than 750");
+    
+// } else if (balance < 900) {
+//     console.log("less than 750");
+    
+// } else {
+//     console.log("less than 1200");
+
+// }
+
+const userLoggedIn = true
+const debitCard = true
+const loggedInFromGoogle = false
+const loggedInFromEmail = true
+
+if (userLoggedIn && debitCard && 2==3) {
+    ///console.log("Allow to buy course");
+}
+
+if (loggedInFromGoogle || loggedInFromEmail) {
+    //console.log("User logged in");
+}   
+
+                                                        //SWITCH
+const month = 3
+switch (month)  {
+    case 1:
+        //console.log("january");
+        break;
+    case 2:
+      //  console.log("febuary");
+        break;
+    case 3:
+       // console.log("march");
+        break;
+    case 4:
+     //   console.log("april");
+         break;
+    case 5:
+   //     console.log("may");
+        break;
+    default:
+ //       console.log("default case match");
+        break;
+}
+
+const emptyObj = {}
+if(Object.keys(emptyObj).length == 0){
+//    console.log("object is empty");
+}
+                                            // nullish coalescing operator (??) : null undefined
+let val1;
+
+// val1 = 10 ?? 15;
+// val1 = null ?? 10;
+// val1 = undefined ?? 14;
+val1 = num ?? 10 ?? 15 
+//console.log(val1);
+//                                      terniary operators
+//condition ? true : false
+
+// const iceprice = 100
+// iceprice <=80 ? console.log("less than 80 ") : console.log("more than 80");
+
+
+                                                                                // FOR loop         
+// for (let i = 1; i <=10 ; i++)
+//  {
+//     const element = i;
+//     console.log(element);
+        
+// }
+
+for (let i = 1; i <=10 ; i++)
+ {
+    const element = i;
+    if (element == 5) {                                     // FOR WITH IF
+       // console.log("5 is best number");
+    }
+    
+    ///console.log(element);
+}
+for (let I = 1; I <=10; I++)
+ {
+  //  console.log(`outer loop ${I}`);
+    for (let j = 0; j<=10; j++)
+     {
+//    console.log(I + '*'+j+'='+I*j );    
+    }
+}
+
+let myArray = ["flash","batman","superman"]
+///console.log(myArray.length)
+for (let index = 0; index < myArray.length; index++)
+ {
+    const element = myArray[index];
+  //console.log(element);  
+}
+
+                                            //break and continue
+for (let i = 1; i <=20; i++)
+ {
+    if (i == 5)
+     {
+    // console.log('detected 5');
+     break   
+    }
+  //console.log(i);
+    
+}
+
+                                                            //WHILE LOOP AND DO WHILE LOOP
+let index = 0
+while (index <=10)
+ {
+    //console.log(`value of index ${index}`);
+    index = index + 2
+
+}                                                            
+
+let myarr =["batman","spiderman","Thor"]
+let arr =0
+while (arr<myArr.length)
+ {
+//    console.log(`value of    index${myarr[arr]}`);
+    arr = arr +1    
+}
+                                                            //DO WHILE
+let score = 1
+do {
+    //console.log(`score value is ${score}`);
+    score++
+} while (score<=10);
+                                                            //FOR OF LOOP
+const Arr =[1,2,3,4,5]
+for (const val of Arr)
+ {
+//    console.log(val);
+}
+const greetings = "hello world"
+for (const greet of greetings)
+ {
+  ///  console.log(`each char is ${greet}`);    
+} 
+
+//                                                              MAPS
+const map = new Map()
+
+map.set('IN',"India")
+map.set('USA',"United State of Amrica")
+map.set('Fr',"France")
+map.set('IN',"India")
+
+//console.log(map);
+for (const [key,value] of map) {
+
+ //   console.log(key,':-',value);
+}
+                                                            //OBJECT WITH FOR IN LOOP
+const myObject = {
+    js : 'JAVASCRIPT',
+    cpp : 'c++',
+    rb : 'rubby',
+    swift : 'swift by apple'
+}
+for (const key in myObject) {
+   //console.log(myObject[key]);       //1st printout
+   console.log(`Shortname is : ${key} Fullname : ${myObject[key]}`);    
+}
+
