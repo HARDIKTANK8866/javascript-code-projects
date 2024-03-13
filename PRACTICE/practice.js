@@ -613,6 +613,60 @@ const myObject = {
 }
 for (const key in myObject) {
    //console.log(myObject[key]);       //1st printout
-   console.log(`Shortname is : ${key} Fullname : ${myObject[key]}`);    
+       //console.log(`Shortname is : ${key} Fullname : ${myObject[key]}`);    
 }
+                                                            //ARRAY WITH FOR IN LOOP
+const programming = ["js","rb","py","java","cpp"]
+for (const key in programming) {
+    ///console.log(programming[key]);
+    }
 
+                                                                //FOREACH WIRH FUNCTION
+const coding = ["js", "ruby","java","python","cpp"]
+
+coding.forEach( function(val)
+{
+   // console.log(val);
+})
+                                            //ARRAY IN OBJECT WITH ITRATION DATABASE
+const mycoding = [
+    {
+        languageName: "javascript",
+        languagedFileName: "js"
+    },
+    {
+        languageName: "java",
+        languagedFileName: "java"
+    },
+    {
+        languageName: "python",
+        languagedFileName: "py"
+    },
+]
+mycoding.forEach((item)=>{
+    //console.log(item.languageName);
+})
+                                                //FILTER WITH ARRAY
+//const myNum =[1,2,3,4,5,6,7,8,9,10]
+// const myNums = myNum.filter((num) => num > 4)
+// console.log(myNums);
+                                                //MAP WITH ADD 10
+// const myNumbers =[1,2,3,4,5,6,7,8,9,10]
+//const myNums = myNumbers.map((num) => num +10)
+//console.log(myNums);
+                                                //CHAINING METHOD 
+//const myNumbers =[1,2,3,4,5,6,7,8,9,10]
+//const myNums =myNumbers
+                    // .map((num) => num * 10)
+                    // .map ((num)=> num+1)
+                    // .filter((num)=> num >=40) 
+
+//console.log(myNums);
+                                                    //reduce method
+const myNum =[1,2,3,4,5]
+// const myTotal =myNum.reduce(function(acc,curval){
+//     console.log(`acc: ${acc}and currval is: ${curval}`);
+//     return acc +curval
+// },0)
+const myTotal =myNum.reduce((acc,curval)=>acc+curval,0)
+console.log(myTotal);
