@@ -1,0 +1,11 @@
+.button{
+    width: 100px;
+    height: 100px;
+    border: solid black 2px;
+    display: inline-block;
+}
+.canvas{
+    margin: 100px;
+    width: 80px;
+    text-align: center;
+}
