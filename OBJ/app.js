@@ -105,4 +105,4 @@ class user{
 }
 let student1=new user("hardik","abc@email.com");
 let student2=new user("tushal","xyz@email.com");
-
+ 
