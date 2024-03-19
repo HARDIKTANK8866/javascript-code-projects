@@ -51,10 +51,10 @@ let padded = text.padStart(4,"0");
 let Padded = text.padEnd(4,"1")
 const gameName = new String(' Hardiktank tank    88')
 let result = gameName.length;
-console.log(gameName);
+// console.log(gameName);
 
 
-console.log(`string num is :${gameName.length}`);                       //.length 
+// console.log(`string num is :${gameName.length}`);                       //.length 
 // console.log(gameName.toLocaleLowerCase());            //.toLocaleLowerCase
 // console.log(gameName.toUpperCase());                  //.toUpperCase
 // console.log(gameName.charAt(3));                      //.charAt you can see character num of position
@@ -68,18 +68,118 @@ console.log(`string num is :${gameName.length}`);                       //.lengt
 // console.log(gameName.slice(1,6));                         //.slice print to slice to words 
 // console.log(gameName.slice(-4));                          // + to print 4 less char & - last 4 print word
 const rohit_name = 'rohit'                   
-console.log('rohit_name charAtCode -> ',rohit_name.charCodeAt());
-console.log('code point',gameName.codePointAt(3,2)); 
+// //console.log('code point',gameName.codePointAt(3,2)); 
 //console.log(gameName.concat(name));                         //.concat to used string join
 //console.log(gameName.endsWith('tank'));                     ///.endswith to used last string true/false
-console.log(gameName.lastIndexOf('H'));
-console.log(padded);
-console.log(Padded);
+// console.log(gameName.lastIndexOf('H'));
+//console.log(Padded);
 //console.log(gameName.repeat(3));                           //.repeat(3) repeat str num of time
 //console.log(gameName.replace(`tank`,`prince`));            //.replace is used to replace char
-//console.log(gameName.replaceAll(`tank`,`PRINCE`));         //.replaceAll all replace value
-console.log('search :',gameName.search('tank'));                      //.search position of the match:
-//console.log(name.split(''));                                 //.split returns the array
-console.log(name.matchAll('tank'));
-console.log(gameName.matchAll('Hardik'));
-console.log(gameName.valueOf());
+// //console.log(gameName.replaceAll(`tank`,`PRINCE`));         //.replaceAll all replace value
+// console.log('search :',gameName.search('tank'));                      //.search position of the match:
+// //console.log(name.split(''));                                 //.split returns the array
+// console.log(name.matchAll('tank'));
+// console.log(gameName.matchAll('Hardik'));
+// console.log(gameName.valueOf());
+
+
+
+
+
+const string = " Hardiktanktanktank  89  . "
+console.log(`string length is :${string.length}`);
+console.log(string[13]);
+console.log(`string is uppercase:${string.toUpperCase()}`);
+// console.log(string);
+console.log(`string is lowercase:${string.toLowerCase()}`);
+// console.log(string);
+console.log(`character is :${string.charAt(3)}`);
+console.log(`charUnicode is :${string.charCodeAt(67)}`);
+let latter = string.at(4)
+console.log(`at charaacter return is:${latter}`);
+let Text = "Hello word"
+let char = Text[0]
+console.log(`string is :${char}`);
+console.log(`Orignal is :${string}modified is :${string.slice(2,9)}`);
+console.log(`Orignal is :${string}modified is :${string.split([])}`);
+console.log(`Original is :${string}concat to ${string.concat(Text)}`);
+console.log(`Original string is:${string}trim string is :${string.trim()}`);
+console.log(`Original string is:${string}starttrim string is :${string.trimStart()}`);
+console.log(`Original string is:${string}Endtrim string is :${string.trimEnd()}`);
+console.log(`Original string is:${string}SubString is :${string.substring(0,6)}`);
+console.log(`Original string is:${string}SubStr is :${string.substr(-0,6)}`);
+let num_P = "5"
+console.log(`Original  is:${num_P}paded is :${num_P.padStart(6,"4")}`);
+console.log(`Original  is:${num_P}paded is :${num_P.padEnd(6,"4")}`);
+console.log(`Original string is :${string}repeat string is${string.repeat(3)}`);
+console.log(`Original string is :${string}modified string is${string.replace("Hardik","jemish")}`);
+console.log(`Original string is :${string}modified  string is${string.replaceAll("tank","00")}`);
+console.log(string.indexOf("t"));
+console.log(string.lastIndexOf("8"));
+console.log(string.search("t"));
+console.log(`Original string is :${string}modified match  string is:${string.match("tank")}`);
+// let Array = string.matchAll(string)
+// console.log(Array[0]);
+// console.log(`Original string is :${string}modified matchAll  string is:${string.matchAll("tank")}`);
+let ary =Array.from(string.matchAll("tank"))
+for (let i = 0; i < ary.length;i++)
+    console.log(ary[i][0],ary[i].index);
+    
+
+//yarynlengthg(Array);
+// console.log(Array.from(ary));
+console.log(`Original string is :${string}modified  string is :${string.includes("raks")}`);
+console.log(`Original string is :${string}modified  string start With :${string.startsWith(" Hardik")}`);
+console.log(`Original string is :${string}modified  string End With :${string.endsWith("  89  .")}`);
+
+
+
+
+
+
+
+
+
+
+
+
+// .length
+// .toUpperCase
+// .toLowerCase
+// .charAt
+// .charCodeAt
+// .substr
+// .substring
+// .slice
+// .concat
+// .trim
+// .trimEnd
+// .trimStart
+// .split
+// .at
+// .string[0]
+// .search
+// .indexOf
+// .lastIndexOf
+// .match
+// .matchAll
+// .startsWith
+// .endsWith
+// .includes
+// .repeat
+// .replace
+// .replaceAll
+// .padEnd
+// .padStart
+
+
+
+
+
+
+
+
+
+
+
+
