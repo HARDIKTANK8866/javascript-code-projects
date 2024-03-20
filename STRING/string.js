@@ -143,32 +143,32 @@ console.log(`Original string is :${string}modified  string End With :${string.en
 
 
 
-// .length
-// .toUpperCase
-// .toLowerCase
-// .charAt
-// .charCodeAt
-// .substr
-// .substring
-// .slice
-// .concat
-// .trim
-// .trimEnd
-// .trimStart
-// .split
-// .at
-// .string[0]
-// .search
-// .indexOf
-// .lastIndexOf
-// .match
-// .matchAll
-// .startsWith
-// .endsWith
-// .includes
-// .repeat
-// .replace
-// .replaceAll
+// .length      length janva mate
+// .toUpperCase  uppercase mate
+// .toLowerCase     lowercase mate
+// .charAt           index mathi char find karva    
+// .charCodeAt         unicode value return //char na hoyto NaN return kare
+// .substr              string start to end print karva
+// .substring               similer substr
+// .slice                   start index to end endex print karva
+// .concat                   string join karva
+// .trim                        whitespace clear karva
+// .trimEnd                     end whitespace clean
+// .trimStart                   start whitespace clean
+// .split                       string to arry
+// .at                      string index mathi chara
+// .string[0]               similer to charAt
+// .search                  one word find out karva mate
+// .indexOf                 char ni index janva
+// .lastIndexOf             last indexof char ni position janva
+// .match                   similer word match karva
+// .matchAll                > similer word match into array
+// .startsWith              start with true and false
+// .endsWith                end with true and false
+// .includes                include word true and false
+// .repeat                  string repeat karva copy paste
+// .replace                 replace word to another word
+// .replaceAll              replaceAll word to another word
 // .padEnd
 // .padStart
 
