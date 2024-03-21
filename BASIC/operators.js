@@ -80,3 +80,16 @@ const p = 5
 const q = 3
 console.log(p<<q); 
 
+//data opertaors 
+
+ 
+//Arithmetic + - / *  modulus % , ** exponenation ++ incremnet -- decrement
+// assignment op, = , += ,-+ ,*= ,%=,**= 
+//comparison op, == equal to , != not quial to , === equial to type , !== not equal to type
+// , > , >= , < , <= , ? ternary op.
+// loginal op, && || !  
+// string op, + add concanate 
+// shift assignment op,  <<, <<= , >> ,>>= >>>= 
+// bitwise op, &= , ^= , !=    x&=y x=x&y 
+//logical assignment op, &&= , ||=, ??=
+// type op, type of instance of
