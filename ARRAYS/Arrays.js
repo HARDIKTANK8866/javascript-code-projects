@@ -61,3 +61,13 @@ companies.shift();
 companies.splice(3,1,"Ola");
 companies.push("Amazone");
 console.log(companies);
+
+                                                                 //PRACTICE 
+ let marks =[82,36,78,67,90];
+ console.log(marks);
+ console.log(marks.length);
+let heros = ["hulk","shaktiman","sipderman","ironman"]
+console.log(heros);
+marks[3]= 88;
+console.log(marks.toString())
+console.log(heros.toString());
