@@ -50,3 +50,32 @@ for (let i = 0; i <=100; i++)
      
 }
 
+// -JavaScript Variables
+// -JavaScript Operators
+// -JavaScript Data Types basic infomation
+// -JavaScript Strings and Methods
+// -JavaScript String Search
+// -JavaScript Template Strings
+// -JavaScript Functions(Basic Intro)
+// -JavaScript Objects(Basic Intro)
+// -JavaScript Arrays(Basic Intro)
+// -Js Conditional Statements(if, else, and else if,switch)
+// -JavaScript For Loops
+
+let index = 0
+while (index <= 10) {
+    console.log(`value of index is ${index}`);
+    index= index + 2
+}
+let myarry = ["thor","spiderman","flash"]
+let ar = 0
+while (ar <myarry.length) {
+    console.log(`All hero print ${myarry[ar]}`);
+    ar = ar+1;
+}
+
+let score = 0
+do {
+    console.log(`score value is : ${score}`);
+    score ++
+} while (score <=10);
