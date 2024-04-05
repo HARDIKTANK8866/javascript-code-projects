@@ -55,9 +55,51 @@ console.log("Array slice is: ",abc.slice(2,-5));
 console.log(abc);
 
 
-const A = ["a","b","c","d","e","f","g","h"]                                     //Array.splice()
-// console.log(A.splice(3,2,"A","B"));
-console.log("Array spllice is : ",A);
+// const A = ["a","b","c","d","e","f","g","h"]                                     //Array.splice()
+//  console.log(A.splice(3,2,"A","B"));
+// console.log("Array spllice is : ",A);
 
-const spliced = A.toSpliced(2)
-console.log(spliced);
+// const spliced = A.toSpliced(2)
+// console.log(spliced);
+
+const A = ["a","b","c","d","e","f","g","h"]                                        //Array.splice()
+console.log(A.splice(1,3,"lemon","limbu"));
+console.log("after updated = ",A);
+
+
+// const month = ["jan","feb","march","april","may"]
+// spliced = month.toSpliced(0,1)
+// console.log(spliced);
+
+console.log("fruits is = ",fruits);
+console.log("Indexof position is = ",fruits.indexOf("papayas"));                //Array.indexof()
+
+console.log("fruits is = ",fruits);
+console.log("Last indexof is =",fruits.lastIndexOf("papayas"))                  //Array.lastIndexOf()
+
+let numbers = [1, 2, 3, 4, 5];
+let evenNum = numbers.find(numbers => numbers % 2 === 0)
+console.log("Even num is = ",evenNum);                          //array.find() >> findout first element 
+
+let evenIndexnum = numbers.findIndex(numbers => numbers % 2 === 0) //index of first even number
+console.log("evenIndex is = ",evenIndexnum);
+
+const temp = [27,28,30,40,42,35,30,45,44]
+let high = temp.findLast(temp => temp > 40)                        //array.findLast()
+console.log("High temp is =",high);                                 //findout last index value
+
+let tempPosition = temp.findLastIndex(x => x > 40);             //array.findLastIndex()
+console.log(tempPosition);                                      //findout last index number in array    
+
+//************************************Array sorting******************************************** */
+
+const shope =["Banana","Apple","Mango","Lemon","Orange"]
+
+console.log("Fruits is : ",shope);
+console.log("Sorted array : ",shope.sort());                                      //Array.sort()
+console.log("Reverse array is :",shope.reverse());
+// const newArray =shope.toSorted();
+// console.log(newArray);
+
+const points = [40, 100, 1, 5, 25, 10];
+console.log(points.sort());
