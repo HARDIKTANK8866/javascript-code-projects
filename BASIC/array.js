@@ -97,9 +97,135 @@ const shope =["Banana","Apple","Mango","Lemon","Orange"]
 
 console.log("Fruits is : ",shope);
 console.log("Sorted array : ",shope.sort());                                      //Array.sort()
-console.log("Reverse array is :",shope.reverse());
+console.log("Reverse array is :",shope.reverse());                                //Array.reverse()
 // const newArray =shope.toSorted();
 // console.log(newArray);
 
-const points = [40, 100, 1, 5, 25, 10];
+const points = ['40', '100', '1', '5', '25', '10'];
 console.log(points.sort());
+
+
+
+points.sort(function(a,b)                                                       //Array.sort by Numeric sort
+ {
+    return a-b                                                                                                           
+}    )
+console.log("Number Sorted",points);
+
+
+points.sort(function (a,b)
+ {
+    return 0.5 - Math.random()    
+})
+console.log("Random sorted array :",points);
+
+//                                          Lowest and Highest value in Array
+
+
+console.log(points);
+points.sort(function (a,b) {
+    return a-b
+})
+console.log("Lowest value:",points[0]);         //Lowest number
+
+
+
+points.sort(function (a,b) {
+    return b-a
+})
+console.log("Highest value:",points[0]);
+
+
+                                     
+                                                        //USING Math.Min() on array
+
+const arr= [3,5,6,4,67,89,34,21,2]
+function myArrayMin(arr) {
+    return Math.min.apply(num,arr)
+}
+console.log("Min value is: ",myArrayMin(arr))
+
+function myArrayMax(arr) {
+    return Math.max.apply(null,arr)
+}
+console.log("Max value is :",myArrayMax(arr));
+
+//Using loop find out lowest value and Highest value
+
+function myArrayMin(arr) {
+    let len = arr.length;
+    let min = Infinity;
+    while (len--) {
+      if (arr[len] < min) {
+        min = arr[len];
+      }
+    }
+    return min;
+  }
+console.log("Using Loop findout Min value is : ",myArrayMin(arr));
+
+
+
+function myArrayMax(arr) {
+    let len = arr.length;
+    let max = -Infinity;
+    while (len--) {
+      if (arr[len] > max) {
+        max = arr[len];
+      }
+    }
+    return max;
+  }
+console.log("Using Loop findout Max value is : ",myArrayMax(arr));
+
+                                                                      //Sorting Object Array
+const cars = [
+    {type : "Volvo",Year : 2001},
+    {type : "Saab",Year : 2016},
+    {type : "BMW",Year : 2010},
+]
+
+console.log("",cars.sort(function(a,b){return a.Year-b.Year}));
+    
+
+                                                                                //Array iteration Method
+
+const number = [40,50,1,23,44,55,98]
+
+number.forEach(myFunction)
+function myFunction(value,index) {
+   console.log(index + ":"+ value);
+}
+
+
+const a = ["hardik","karan","aman","neha"]
+a.forEach(myFunction)                                                          //Array.forEach()
+function myFunction(value,index) {
+    console.log(index+":"+ value);
+}
+
+myNewNum = number.map((number)=>(number+10))
+console.log("Using map value is : ",myNewNum);                               //Array.map
+
+console.log(number);
+const newArr = number.flatMap((number)=>(number*2))
+console.log("Using flatmap value is : ",newArr);                            //Array.flatMap
+
+const newName = a.flatMap((a)=>(a.concat("bhai")))                          //Array.flatMap()
+console.log(newName);
+
+const array = [1, 2, 3];
+
+// Using map()
+const mappedArray = array.map(num => [num, num * 2]);
+console.log(mappedArray);
+
+// Using flatMap()
+const flatMappedArray = array.flatMap(num => [num, num * 2]);
+console.log(flatMappedArray);
+
+const myNumS = [1,3,43,12,34,4,5,6,7,44,5,43,7,2]
+
+ newNum = myNumS.filter((myNumS)=>(myNumS > 7))
+console.log("filter number is : ",newNum);
+console.log(myNumS);
