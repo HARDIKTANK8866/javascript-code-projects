@@ -71,3 +71,50 @@ console.log(heros);
 marks[3]= 88;
 console.log(marks.toString())
 console.log(heros.toString());
+
+                                                //forEach method 
+
+const people = [
+    {name : 'het',age : 20,position : 'devloper',id : 1},
+    {name : 'rahul',age : 26,position : 'designer',id : 2},
+    {name : 'meet',age : 28,position : 'Boss',id : 3},
+    {name : 'pinkesh',age : 24,position : 'BD',id : 4}
+]
+
+function showPerson(person) {
+    console.log(person.position);
+}
+people.forEach(showPerson)
+                                        //Anotherway to print value 
+people.forEach(function(item){
+    console.log(item.position.toUpperCase());
+})
+                                        //Array.map()
+const ages = people.map(function(person){
+    return person.age +10;
+})
+
+const newPeople = people.map(function(person)
+{
+    return  {
+        firstname : person.name.toUpperCase(),
+        oldAge : person.age + 5
+    }
+})
+
+const names = people.map(function(person){
+    return `<h1>${person.name}</h1>`
+})
+
+console.log(names);
+                                        // Array.filter()
+
+const youngPeople = people.filter(function(person){
+        return person.age > 20
+})
+console.log(youngPeople);
+
+const devlopers = people.filter(function(person){
+    return person.position === 'Boss'
+})
+console.log(devlopers);

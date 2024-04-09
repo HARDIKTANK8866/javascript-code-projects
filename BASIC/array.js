@@ -216,11 +216,11 @@ console.log(newName);
 
 const array = [1, 2, 3];
 
-// Using map()
+      // Using map()
 const mappedArray = array.map(num => [num, num * 2]);
 console.log(mappedArray);
 
-// Using flatMap()
+      // Using flatMap()
 const flatMappedArray = array.flatMap(num => [num, num * 2]);
 console.log(flatMappedArray);
 
@@ -229,3 +229,66 @@ const myNumS = [1,3,43,12,34,4,5,6,7,44,5,43,7,2]
  newNum = myNumS.filter((myNumS)=>(myNumS > 7))
 console.log("filter number is : ",newNum);
 console.log(myNumS);
+
+const rNum = [1,2,3,4]                                                  //Array.reduce()
+const myTotal = rNum.reduce((acc,curvall) => (acc+curvall),0)
+console.log("Array total number is : ",myTotal);
+
+
+const shoppingCart = [
+  {
+    item : "js",
+    price : 1200
+  },
+  {
+    item : "py",
+    price : 2000,
+  },
+  {
+    item : "html",
+    price : 3000
+  }
+]
+
+const toPaycart = shoppingCart.reduce((acc,items) => acc+items.price,0)
+console.log(toPaycart);
+
+
+const MyTotal = rNum.reduceRight((acc,curvall) => (acc+curvall),0)
+console.log("Array total number is : ",MyTotal);
+
+
+istrue = rNum.every((rNum) => (rNum<10))                // Array.every()
+console.log("number is in ya not",istrue);
+
+result = rNum.some((rNum)=>(rNum>2))                    // Array.some()
+console.log("some value is : ",result);
+
+const name = "hardiktank"                               //Array.from()
+const nName =Array.from(name)
+console.log(nName);
+
+const fal = ["banana","apple","mengo"]
+const iterator = fal.keys()                             //Array.keys()
+for(const key of iterator){
+console.log(key);
+}
+
+const f = fal.entries()                                 //Array.entries()
+for(let x of f)
+{
+  console.log("Array key / value :",x);
+}
+
+// const Arr = [1, 2, 3, 4, 5];                            //with pending
+// console.log(Arr.with(2, 6)); 
+// console.log(Arr); 
+
+//Spread operators
+
+const q1 = ["Jan", "Feb", "Mar"];
+const q2 = ["Apr", "May", "Jun"];
+const q3 = ["Jul", "Aug", "Sep"];
+const q4 = ["Oct", "Nov", "May"];
+const year = [...q1,...q2,...q3,...q4]
+console.log(year);
