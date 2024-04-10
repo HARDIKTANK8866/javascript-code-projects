@@ -75,10 +75,10 @@ console.log(heros.toString());
                                                 //forEach method 
 
 const people = [
-    {name : 'het',age : 20,position : 'devloper',id : 1},
-    {name : 'rahul',age : 26,position : 'designer',id : 2},
-    {name : 'meet',age : 28,position : 'Boss',id : 3},
-    {name : 'pinkesh',age : 24,position : 'BD',id : 4}
+    {name : 'het',age : 20,position : 'devloper',id : 1,salary : 2000},
+    {name : 'rahul',age : 26,position : 'designer',id : 2,salary : 21000},
+    {name : 'meet',age : 28,position : 'Boss',id : 3,salary : 50000},
+    {name : 'pinkesh',age : 24,position : 'BD',id : 4,salary : 40000}
 ]
 
 function showPerson(person) {
@@ -118,3 +118,17 @@ const devlopers = people.filter(function(person){
     return person.position === 'Boss'
 })
 console.log(devlopers);
+
+const findPeople = people.find(function(person){
+    return person.id === 3
+})
+console.log("findout people : ",findPeople);
+
+const total = people.reduce(function(acc,currval){
+    console.log(`total is ${acc}`);
+    console.log(`curr value is ${currval.salary}`);
+    acc +=currval.salary
+    return acc
+},100) 
+
+console.log("All salary total is : ",total);
