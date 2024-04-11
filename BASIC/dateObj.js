@@ -45,3 +45,8 @@ console.log("Running second  is :",second);
 console.log("Running mili se is :",milisec);
 console.log("Running year is :",dayofweek);
 
+console.log(date.toDateString());
+
+
+
+
