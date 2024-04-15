@@ -1,0 +1,15 @@
+.img-container{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border: radius 50%;
+    align-items: center;
+}
+
+#person-image{
+    width: 50%;
+    height: 50%;
+    object-fit:cover;
+    border-image: round;
+    
+}
