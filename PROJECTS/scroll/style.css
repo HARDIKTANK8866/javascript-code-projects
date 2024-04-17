@@ -316,7 +316,8 @@
     background: var(--clr-white);
   }
   footer {
-    background: var(--clr-grey-1);
+    /* background: var(--clr-grey-1); */
+    background: #A0153E;
     padding: 5rem 1rem;
   }
   footer p {
