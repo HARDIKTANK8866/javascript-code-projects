@@ -670,3 +670,9 @@ const myNum =[1,2,3,4,5]
 // },0)
 const myTotal =myNum.reduce((acc,curval)=>acc+curval,0)
 console.log(myTotal);
+
+
+
+
+
+ 
