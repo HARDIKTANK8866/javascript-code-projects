@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2 style="width: 100%;text-align: center;color: darkblue;text-shadow: 2px 2px 4px rgba(255, 39, 1, 0.5);">Gallery</h2>
+    <section class="section nature">
+        <img src="./nature1.jpg" title="nature-1" class="img"
+        data-id="1" alt="nature">
+        <img src="./nature2.jpg" title="nature-2" class="img"
+        data-id="2" alt="nature">
+        <img src="./nature3.jpg" title="nature-3" class="img"
+        data-id="3" alt="nature">
+    </section>
+    <section class="section city">
+        <img src="./city1.jpg" title="city-1" class="img"
+        data-id="1" alt="city">
+        <img src="./city2.jpg" title="city-2" class="img"
+        data-id="2" alt="city">
+        <img src="./city3.jpg" title="city-3" class="img"
+        data-id="3" alt="city">
+        <img src="./city4.jpg" title="city-4" class="img"
+        data-id="4" alt="city">
+        <img src="./city5.jpg" title="city-5" class="img"
+        data-id="5" alt="city">
+    </section>
+    <div class="modal">
+        <button class="close-btn">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="modal-content">
+            <button class="prev-btn">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="next-btn">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <img src="./city1.jpg" class="main-img" alt="">
+            <h3 class="image-name">image name</h3>
+            <div class="modal-images">
+                <img src="./city5.jpg" title="city-5" class="modal-img"
+            data-id="5" alt="city">
+            <img src="./city4.jpg" title="city-5" class="modal-img selected"
+            data-id="5" alt="city">
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>  
+</body>
+</html>
