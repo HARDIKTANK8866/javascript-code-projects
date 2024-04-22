@@ -75,14 +75,48 @@
 // return val > 90;
 // })
 // console.log(topppers);
-//ASK USER NUMBER 1 TO N SUM WITH REDUCE METHOD 
-let n = prompt("Enter a number");
-let arr = [];   
-for(let i=1 ; i<=n; i++) {
-    arr [i-1]= i;
+                                                //ASK USER NUMBER 1 TO N SUM WITH REDUCE METHOD 
+// let n = prompt("Enter a number");
+// let arr = [];   
+// for(let i=1 ; i<=n; i++) {
+//     arr [i-1]= i;
+// }
+// console.log(arr);
+// let sum = arr.reduce((res ,curr) =>{
+//     return res + curr;
+// });
+// console.log(sum);
+
+                                                //closure function BANK DEPOSIT WITHDRAW PROGRAM WITH CLIENT
+
+function newAccount(name,initialBalance) {
+    let balance = initialBalance
+    function showBalance() {
+        console.log(`Hey ${name} your balance is ${balance}`);
+    }
+    function deposit(amount) {
+        balance += amount
+        showBalance()
+    }
+    function withdraw(amount) {
+        if(amount > balance){
+        console.log(`hey ${name}, sorry not enough balance`);
+            return
+    }
+    balance -= amount;
+    showBalance()
+    }
+    return {showBalance:showBalance,deposit:deposit,withdraw:withdraw}
 }
-console.log(arr);
-let sum = arr.reduce((res ,curr) =>{
-    return res + curr;
-});
-console.log(sum);
+
+const priti = newAccount('priti',500)
+
+const subhash = newAccount('subhash',1000)
+
+priti.showBalance()
+priti.deposit(500)
+priti.withdraw(15000)
+subhash.showBalance()
+
+                    
+

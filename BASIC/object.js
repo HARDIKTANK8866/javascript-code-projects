@@ -70,7 +70,7 @@ rohit.fullName()
 
                     //"this"  function with button and object
 
-function showthis(){
+function showthis(){  
   console.log(this);
 }
 
@@ -86,11 +86,11 @@ const bob ={
 hardik1.showthis()
 bob.showthis()
 
-const btn1 = document.querySelector('.btn-1')
-const btn2 = document.querySelector('.btn-2')
+// const btn1 = document.querySelector('.btn-1')
+// const btn2 = document.querySelector('.btn-2')
 
-btn1.addEventListener('click',showthis)
-btn2.addEventListener('click',showthis)
+// btn1.addEventListener('click',showthis)
+// btn2.addEventListener('click',showthis)
 
 
 
@@ -196,6 +196,26 @@ const counter = {
       console.log(this.count);
   }
 }
-const btn = document.querySelector('.increment')
-btn.addEventListener('click',counter.increment.bind(counter))
+// const btn = document.querySelector('.increment')
+// btn.addEventListener('click',counter.increment.bind(counter))
       
+
+
+                                                              // OBJECT DESTRUCTURING 
+ 
+const rita ={
+  first:"rita",
+  last:"moriya",
+  city: "surat",
+  sibling:{
+        sister:" rehana"
+  }
+}
+
+const {
+  first,
+  last,
+  city,
+  sibling:{sister:favoritesibling},
+} = rita
+console.log(first,last,city,favoritesibling);
