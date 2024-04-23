@@ -219,3 +219,45 @@ const {
   sibling:{sister:favoritesibling},
 } = rita
 console.log(first,last,city,favoritesibling);
+
+
+                                                  //OBJECT MAP METHOD
+
+const data ={
+      name: 'rembo',
+      age: 25,
+      status: 'student'
+}                                              
+
+const result = Object.entries(data)
+console.log(result);
+
+const newResult = result.map((item) => {
+  const [first,second] = item
+  console.log(first,second);
+  return first
+})
+
+console.log(newResult);
+
+
+
+                                  // set object - stores a collection of unique values of any type
+
+
+const unique = new Set()
+const random = 'third'
+
+unique.add('first')
+unique.add('second')
+unique.add(random)
+unique.add('four')
+unique.add('five')
+
+const isValue = unique.delete('five')
+console.log(result);
+
+
+
+
+console.log(unique);
