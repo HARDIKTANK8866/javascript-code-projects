@@ -120,7 +120,7 @@ fetch('https://github.com/HARDIKTANK8866')
 .catch((error) => console.log(error))
 
 
-                                                //SIMPLE EXAMPLE PROMISE
+//                                                 SIMPLE EXAMPLE PROMISE
 
 
 // const date = new Promise(function(resolved,reject){
@@ -172,3 +172,6 @@ async function getAllData(){
     await getData(2)
     await getData(3)
 }
+
+
+
