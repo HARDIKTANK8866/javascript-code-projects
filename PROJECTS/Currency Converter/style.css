@@ -9,10 +9,13 @@
     align-items: center;
     min-height: 100vh;
     background-color: #af4d98;
+    min-height: 100vh;
+    background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
+      url(./curr.jpg) center/cover no-repeat;
   }
   
   .container {
-    background-color: #ffffff;
+    background-color: #5a9c9e;
     padding: 2rem;
     border-radius: 1rem;
     min-height: 45vh;
@@ -59,9 +62,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 6rem;
-    border-radius: 0.5rem;
-    border: 1px solid lightgray;
+    width: 7rem;
+    border-radius: 10rem;
+    border: 2px solid rgb(3, 0, 0);
   }
   
   .select-container select {
@@ -75,14 +78,25 @@
   
   form button {
     height: 3rem;
-    background-color: #af4d98;
+    background-color:   #050505;
     color: #fff;
     font-size: 1.15rem;
     cursor: pointer;
   }
  
   footer {
-    color:purple;
-    padding: 1.5rem 0.5rem;
+    color:rgb(0, 0, 0);
+    padding: 1rem 1rem;
   }
+  .image-container {
+    padding: 0px; /* Optional: Add some padding for better spacing */
+    background-position: center;
+    min-height: 100vh;
+    background: linear-gradient(rgba(117, 11, 121, 0.5), rgba(136, 130, 130, 0.7)),
+      url(./curr.jpg) center/cover no-repeat;
+  }
+  .msg{
+    text-align: center;
+  }
+
   
