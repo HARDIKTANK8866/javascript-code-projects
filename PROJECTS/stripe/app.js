@@ -79,3 +79,11 @@ nav.addEventListener('mouseover', function (e) {
     submenu.classList.remove('show');
   }
 });
+
+const date =document.getElementById('date')
+date.innerHTML = new Date().getFullYear()
+
+document.getElementById("signin-btn").addEventListener("click", function() {window.location.href = "https://github.com/HARDIKTANK8866/TASK";});
+
+
+document.getElementById("start-now").addEventListener("click",function(){window.location.href="https://github.com/HARDIKTANK8866/TASK"})
