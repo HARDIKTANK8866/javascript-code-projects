@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | comfy</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-center">
+        <div>
+          <button class="toggle-nav">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul class="nav-links">
+            <li>
+              <a href="index.html" class="nav-link">home</a>
+            </li>
+            <li>
+              <a href="products.html" class="nav-link">products</a>
+            </li>
+            <li>
+              <a href="about.html" class="nav-link">about</a>
+            </li>
+          </ul>
+        </div>
+        <img src="./images/white.svg" class="nav-logo" alt="logo" />
+        <div class="toggle-container">
+          <button class="toggle-cart">
+            <i class="fas fa-shopping-cart"></i>
+          </button>
+          <span class="cart-item-count">1</span>
+        </div>
+      </div>
+    </nav>
+    <section class="hero">
+      <div class="hero-container">
+        <h1 class="text-slanted">rest, relax, unwind</h1>
+        <h3>Embrace your choices - we do</h3>
+        <a href="products.html" class="hero-btn">show now</a>
+      </div>
+    </section>
+    <div class="sidebar-overlay show">
+      <aside class="sidebar">
+        <button class="sidebar-close">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="sidebar-links">
+          <li>
+            <a href="index.html" class="sidebar-link">
+              <i class="fas fa-home fa-fw"></i>
+              home
+            </a>
+          </li>
+          <li>
+            <a href="products.html" class="sidebar-link">
+              <i class="fas fa-couch fa-fw"></i>
+              products
+            </a>
+          </li>
+          <li>
+            <a href="about.html" class="sidebar-link">
+              <i class="fas fa-book fa-fw"></i>
+              home
+            </a>
+          </li>
+
+        </ul>
+      </aside>
+    </div>
+</body>
+<script type="module" src="app.js"></script>
+</html>
