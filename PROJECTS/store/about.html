@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | comfy</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar page">
+      <div class="nav-center">
+        <div>
+          <button class="toggle-nav">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul class="nav-links">
+            <li>
+              <a href="index.html" class="nav-link">home</a>
+            </li>
+            <li>
+              <a href="products.html" class="nav-link">products</a>
+            </li>
+            <li>
+              <a href="about.html" class="nav-link">about</a>
+            </li>
+          </ul>
+        </div>
+        <img src="./images/black.svg" class="nav-logo" alt="logo" />
+        <div class="toggle-container">
+          <button class="toggle-cart">
+            <i class="fas fa-shopping-cart"></i>
+          </button>
+          <span class="cart-item-count">1</span>
+        </div>
+      </div>
+    </nav>
+    <section class="page-hero">
+      <div class="section-center">
+        <h3 class="page-hero-title">Home / About</h3>
+      </div>
+    </section>
+    <div class="sidebar-overlay show">
+      <aside class="sidebar">
+        <button class="sidebar-close">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="sidebar-links">
+          <li>
+            <a href="index.html" class="sidebar-link">
+              <i class="fas fa-home fa-fw"></i>
+
+              home
+            </a>
+          </li>
+          <li>
+            <a href="products.html" class="sidebar-link">
+              <i class="fas fa-couch fa-fw"></i>
+              products
+            </a>
+          </li>
+          <li>
+            <a href="about.html" class="sidebar-link">
+              <i class="fas fa-book fa-fw"></i>
+              home
+            </a>
+          </li>
+        </ul>
+      </aside>
+    </div>
+    <div class="cart-overlay">
+      <aside class="cart">
+        <button class="cart-close">
+          <i class="fas fa times"></i>
+        </button>
+        <header>
+          <h3 class="text-slanted">your bag</h3>
+        </header>
+        <div class="cart-items">
+          <article class="cart-item" data-id="">
+            <img src="./images/recor.jpg" class="cart-item-img" alt="name" />
+            <div>
+              <h4 class="cart-item-name">high-back bench</h4>
+              <p class="cart-item-price">$13.89</p>
+              <button class="cart-item-remove-btn">remove</button>
+            </div>
+            <div>
+              <button class="cart-item-increase-btn">
+                <i class="fas fa chevron-up"></i>
+              </button>
+              <p class="cart-item-amount">1</p>
+              <button class="cart-item-decrease-btn">
+                <i class="fas fa chevron-dopwn"></i>
+              </button>
+            </div>
+          </article>
+        </div>
+        <footer>
+          <h3 class="cart-total text-slanted">total : $ 12.90</h3>
+          <button class="cart-checkout btn">checkout</button>
+        </footer>
+      </aside>
+    </div>
+    <section class="section section-center about-page">
+      <div class="title">
+        <h2><span>/</span>our history</h2>
+      </div>
+      <p class="about-text">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut dolor ex
+        quasi dolore commodi ratione quos nam aliquam, nihil tempore porro odio
+        sequi modi dicta, voluptates beatae soluta saepe veritatis, et maxime
+        nobis. Cupiditate deleniti impedit doloribus blanditiis quam, animi
+        debitis minus facere saepe ipsa labore soluta, doloremque odio
+        accusantium sunt voluptas suscipit, totam minima sequi laborum velit
+        nobis facilis tempora! Esse adipisci qui, ipsam voluptatem, maxime
+        explicabo rem maiores quisquam temporibus officia repudiandae! Esse
+        autem voluptas nam earum molestias?
+      </p>
+    </section>
+    <script type="module" src="./src/pages/about.js"></script>
+  </body>
+</html>

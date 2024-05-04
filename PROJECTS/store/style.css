@@ -245,9 +245,9 @@ Navbar
   }
   .nav-logo {
     position: absolute;
-    top: 150%;
+    top: 50%;
     left: 65%;
-    height: 10cap;
+    height: 7.5cap;
     width: 100cap;
     transform: translate(-50%, -50%);
   }
@@ -294,7 +294,7 @@ Hero
   min-height: 100vh;
   margin-top: -6rem;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(./images/main-bcg.jpeg) center/cover;
+    url(./images/recor.jpg) center/cover;
   display: grid;
   place-items: center;
   color: var(--clr-white);

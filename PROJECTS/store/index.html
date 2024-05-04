@@ -8,7 +8,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     />
-
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -55,6 +54,7 @@
           <li>
             <a href="index.html" class="sidebar-link">
               <i class="fas fa-home fa-fw"></i>
+
               home
             </a>
           </li>
@@ -70,10 +70,42 @@
               home
             </a>
           </li>
-
         </ul>
       </aside>
     </div>
-</body>
-<script type="module" src="app.js"></script>
+    <div class="cart-overlay  ">
+      <aside class="cart">
+        <button class="cart-close">
+          <i class="fas fa times"></i>
+        </button>
+        <header>
+          <h3 class="text-slanted">your bag</h3>
+        </header>
+        <div class="cart-items">
+          <article class="cart-item" data-id="">
+            <img src="./images/recor.jpg" class="cart-item-img" alt="name" />
+            <div>
+              <h4 class="cart-item-name">high-back bench</h4>
+              <p class="cart-item-price">$13.89</p>
+              <button class="cart-item-remove-btn">remove</button>
+            </div>
+            <div>
+              <button class="cart-item-increase-btn">
+                <i class="fas fa chevron-up"></i>
+              </button>
+              <p class="cart-item-amount">1</p>
+              <button class="cart-item-decrease-btn">
+                <i class="fas fa chevron-dopwn"></i>
+              </button>
+            </div>
+          </article>
+        </div>
+        <footer>
+          <h3 class="cart-total text-slanted">total : $ 12.90</h3>
+          <button class="cart-checkout btn">checkout</button>
+        </footer>
+      </aside>
+    </div>
+    <script type="module" src="index.js"></script>
+  </body>
 </html>
