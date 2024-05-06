@@ -245,10 +245,8 @@ Navbar
   }
   .nav-logo {
     position: absolute;
-    top: 50%;
+    top: 14%;
     left: 65%;
-    height: 7.5 cap;
-    width: 100cap;
     transform: translate(-50%, -50%);
   }
   .toggle-nav {
@@ -294,7 +292,7 @@ Hero
   min-height: 100vh;
   margin-top: -6rem;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(./images/recor.jpg) center/cover;
+    url(./images/decor.jpg) center/cover;
   display: grid;
   place-items: center;
   color: var(--clr-white);
@@ -421,6 +419,7 @@ Cart
   transition: var(--transition);
   opacity: 0;
   z-index: -1;
+  
 }
 .cart-overlay.show {
   opacity: 1;
@@ -778,4 +777,3 @@ Single Product Page
     grid-template-columns: 1fr 1fr;
   }
 }
-
