@@ -1,8 +1,4 @@
 
-//   ATTENTION!!!!!!!!!!!
-//   I SWITCHED TO PERMANENT DOMAIN
-//   DATA IS THE SAME JUST A DIFFERENT URL,
-//   DOES NOT AFFECT PROJECT FUNCTIONALITY
 
 const allProductsUrl = 'https://course-api.com/javascript-store-products'; 
 // temporary single product

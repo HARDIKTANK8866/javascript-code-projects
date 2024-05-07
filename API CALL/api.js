@@ -21,7 +21,7 @@ async function fetchData(apiUrl) {
   }
   
   async function main() {
-    const apiUrl = 'https://api.restful-api.dev/objects'; // Replace this with the actual API URL
+    const apiUrl = 'https://fakestoreapi.com/products'; // Replace this with the actual API URL
     const data = await fetchData(apiUrl);
     printData(data);
   }
