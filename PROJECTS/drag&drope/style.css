@@ -1,0 +1,25 @@
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: #e3dff3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.list{
+    background: rgba(165, 158, 158, 0.933);
+    height: 60px;
+    margin: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    cursor: grab;
+}
+
+#left, #right{
+    width: 300px;
+    min-height: 400px;
+    margin: 10px;
+    border: 3px dashed rgb(18, 19, 18);
+}
+
