@@ -105,3 +105,19 @@ fetch('https://www.youtube.com/watch?v=NJwRQgsu1Q8&list=PLu71SKxNbfoBuX3f4EOACle
     console.log(data);
 })
 .catch((error)=>console.log(error))
+
+
+
+
+
+console.log("START...");
+
+setTimeout(() => {
+    console.log("TIMEOUT CALLBACK...")
+}, 0);
+
+Promise.resolve().then(() => {
+    console.log("PROMISE RESOLVED...")
+})
+
+console.log("END...");
